@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Mostra de Projetos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>O que achou da nossa mostra?</h2>
+
+  <form action="salvar.php" method="POST">
+    <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+
+
+
+    <input type="text" name="telefone" placeholder="Digite seu telefone" required>
+
+
+
+    <label for="curso">Qual curso você mais gostou?</label>
+
+    <select name="curso" id="curso" required>
+      <option value="">Selecione</option>
+      <option value="Agropecuária">Ensino Médio em Agropecuária</option>
+      <option value="Administração">Ensino Médio em Administração</option>
+      <option value="Agronegócio">Ensino Médio em Agronegócio</option>
+      <option value="Desenvolvimento de Sistemas">Ensino Médio em Desenvolvimento de Sistemas</option>
+      <option value="Meio Ambiente">Ensino Médio em Meio Ambiente</option>
+    </select>
+
+
+
+    <label for="tipo">Você é:</label>
+
+    <select name="tipo" id="tipo" required>
+      <option value="">Selecione</option>
+      <option value="Aluno">Aluno</option>
+      <option value="Visitante">Visitante</option>
+    </select>
+
+
+    
+    <div class="container">
+      <button type="submit" name="feedback" value="Bom" class="btn bom">
+        <span class="emoji">😊</span>
+        Bom
+      </button>
+      <button type="submit" name="feedback" value="Regular" class="btn regular">
+        <span class="emoji">😐</span>
+        Regular
+      </button>
+      <button type="submit" name="feedback" value="Ruim" class="btn ruim">
+        <span class="emoji">☹️</span>
+        Ruim
+      </button>
+    </div>
+  </form>
+</body>
+</html>
+<!--<form action="salvar.php" method="post">
+  Nome: <input type="text" name="nome"><br>
+  Telefone: <input type="text" name="telefone"><br>
+  Avaliação: 
+  <select name="avaliacao">
+    <option value="ruim">Ruim</option>
+    <option value="mediana">Mediana</option>
+    <option value="boa">Boa</option>
+  </select><br>
+  <button type="submit">Enviar</button>
+</form>!-->
