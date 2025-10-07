@@ -1,3 +1,4 @@
+
 <?php
 //não é necessário alterar isso no pc da escola, pois é o padrão do XAMPP (!)
 $servername = "localhost";

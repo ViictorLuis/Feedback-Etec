@@ -6,13 +6,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Bem-vindo(a)!</h2>
+      <p>Olá! Obrigado por acessar o sistema de feedback do evento da ETEC 🎉</p>
+      <button id="closePopup">Entendi!</button>
+    </div>
+  </div>
+
   <h2>O que achou da nossa mostra?</h2>
 
   <form action="salvar.php" method="POST">
+    <label for="informacoes">Nome:</label>
     <input type="text" name="nome" placeholder="Digite seu nome completo" required>
 
 
-
+    <label for="informacoes">Telefone:</label>
     <input type="text" name="telefone" placeholder="Digite seu telefone" required>
 
 
@@ -55,16 +64,6 @@
       </button>
     </div>
   </form>
+  <script src="script.js"></script>
 </body>
 </html>
-<!--<form action="salvar.php" method="post">
-  Nome: <input type="text" name="nome"><br>
-  Telefone: <input type="text" name="telefone"><br>
-  Avaliação: 
-  <select name="avaliacao">
-    <option value="ruim">Ruim</option>
-    <option value="mediana">Mediana</option>
-    <option value="boa">Boa</option>
-  </select><br>
-  <button type="submit">Enviar</button>
-</form>!-->
