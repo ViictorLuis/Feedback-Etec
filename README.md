@@ -21,3 +21,21 @@ O formulário (`index.html`) possui conexão com o (`salvar.php`), além de marc
   Caso o **XAMPP** em questão utilize valores diferentes, será necessário **alterar essas variáveis** manualmente.
 
 ---
+
+Script de criação do banco
+Para criar o banco e a tabela necessária, execute o seguinte script no phpMyAdmin ou via terminal SQL:
+
+CREATE DATABASE feedback_epa;
+USE feedback_epa;
+
+CREATE TABLE avaliacoes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL,
+  telefone VARCHAR(20) NOT NULL,
+  curso VARCHAR(100) NOT NULL,
+  tipo VARCHAR(20) NOT NULL,
+  feedback VARCHAR(10) NOT NULL,
+  data_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
