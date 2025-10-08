@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback - Mostra de Projetos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="faixa-logo">
+    <img src="imagens/faixaEpa.png" alt="Logo EPA 2025">
+  </header>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Bem-vindo(a)!</h2>
+      <p>Olá! Obrigado por acessar o sistema de feedback do evento da ETEC 🎉</p>
+      <button id="closePopup">Entendi!</button>
+    </div>
+  </div>
+
+  <h2>O que achou da nosso EPA 2025?</h2>
+
+  <form action="salvar.php" method="POST">
+    <label for="informacoes">Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+
+
+    <label for="informacoes">Telefone:</label>
+    <input type="text" name="telefone" placeholder="Digite seu telefone" required>
+
+
+
+    <label for="curso">Qual curso você mais gostou?</label>
+
+    <select name="curso" id="curso" required>
+      <option value="">Selecione</option>
+      <option value="Agropecuária">Ensino Médio e Técnico em Agropecuária</option>
+      <option value="Administração">Ensino Médio e Técnico em Administração</option>
+      <option value="Agronegócio">Ensino Médio, Técnico e Superior em Agronegócio</option>
+      <option value="Desenvolvimento de Sistemas">Ensino Médio, Técnico e Superior em Desenvolvimento de Sistemas</option>
+      <option value="Meio Ambiente">Ensino Médio, Técnico e Superior em Meio Ambiente</option>
+      <option value="Química">Ensino Médio e Técnico em Química</option>
+      <option value="Nutrição">Ensino Médio e Técnico em Nutrição e Dietética</option>
+      <option value="Farmácia">Ensino Médio e Técnico em Farmácia</option>
+      <option value="Zootecnia">Curso Técnico em Zootecnia</option>
+      <option value="Gatronomia">Curso Técnico em Gatronomia</option>
+      <option value="Agronegócio">Curso Técnico em Agronegócio</option>
+    </select>
+
+
+
+    <label for="tipo">Você é:</label>
+
+    <select name="tipo" id="tipo" required>
+      <option value="">Selecione</option>
+      <option value="Aluno">Aluno</option>
+      <option value="Visitante">Visitante</option>
+    </select>
+
+
+    
+    <div class="container">
+      <button type="submit" name="feedback" value="Bom" class="btn bom">
+        <span class="emoji">😊</span>
+        Bom
+      </button>
+      <button type="submit" name="feedback" value="Regular" class="btn regular">
+        <span class="emoji">😐</span>
+        Regular
+      </button>
+      <button type="submit" name="feedback" value="Ruim" class="btn ruim">
+        <span class="emoji">☹️</span>
+        Ruim
+      </button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
