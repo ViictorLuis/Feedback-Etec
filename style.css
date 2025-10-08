@@ -12,13 +12,29 @@ html{
 body {
   font-family: "Mulish", sans-serif;
   text-align: center;
-  margin-top: 40px;
   background-color: rgb(0, 92, 0);
   background: linear-gradient(180deg,rgba(0, 145, 0, 1) 0%, rgba(0, 92, 0, 1) 100%);
 }
 
-/* Estilo do pop-up que aparece ao entrar na página */
+/* Faixa superior com o banner */
+.faixa-logo {
+  width: 100%;
+  height: auto;
+  background-color: rgb(252, 252, 252);
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  overflow: hidden; /* Garante que nada ultrapasse a faixa */
+}
 
+.faixa-logo img {
+  width: 100%;       /* Faz a imagem ocupar toda a largura */
+  height: auto;      /* Faz a imagem ocupar toda a altura */
+  object-fit: contain; /* Preenche o espaço sem distorcer */
+  display: block;    /* Remove espaços indesejados abaixo da imagem */
+}
+
+
+/* Estilo do pop-up que aparece ao entrar na página */
 .popup {
   display: none;
   position: fixed;
@@ -190,5 +206,4 @@ label {
 .emoji {
   font-size: 50px;
   margin-bottom: 8px;
-}
- 
+} 
